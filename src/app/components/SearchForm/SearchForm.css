@@ -1,0 +1,25 @@
+.search-form {
+    width: 100%;
+
+    form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .country-label {
+            width: 200px;
+        }
+
+        .text-field {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .search-button {
+            padding: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+        }
+    }
+}

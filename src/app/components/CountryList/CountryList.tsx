@@ -1,4 +1,5 @@
 import Country from "../Country/Country";
+import "./CountryList.css";
 
 interface CountryListProps {
     countries: Array<Country> | undefined;

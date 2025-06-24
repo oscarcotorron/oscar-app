@@ -1,4 +1,4 @@
-import styles from "./page.module.css";
+import "./SearchForm.css";
 
 interface FormElements extends HTMLFormControlsCollection {
   countryNameInput: HTMLInputElement
@@ -19,11 +19,11 @@ export default function SearchForm({ onSearch }: SearchFormProps) {
     };
 
     return (
-        <section>
+        <section className="search-form">
             <form onSubmit={onSubmit}>
-                <label htmlFor="countryNameInput">Country Name</label>
-                <input type="text" id="countryNameInput" name="countryNameInput" />
-                <input type="submit" value="Search" />
+                <label className="country-label" htmlFor="countryNameInput">Country Name:</label>
+                <input className="text-field" type="text" id="countryNameInput" name="countryNameInput" />
+                <input className="search-button" type="submit" value="Search" />
             </form>
         </section>
     );

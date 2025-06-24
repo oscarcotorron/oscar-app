@@ -1,3 +1,4 @@
+import "./Country.css";
 
 interface CountryProps {
     country: Country;
@@ -8,11 +9,8 @@ export default function Country({ country }: CountryProps) {
     return (
         <div className="country">
             <img src={flag} />            
-            <div>
-                <div>
-                    <span>Short Name:</span>
-                    <span>{name}</span>
-                </div>
+            <div className="data">
+                <h2>{name}</h2>
                 <div>
                     <span>Official Name:</span>
                     <span>{officialName}</span>

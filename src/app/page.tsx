@@ -2,7 +2,7 @@
 import { useState } from "react";
 import CountryList from "./components/CountryList/CountryList";
 import SearchForm from "./components/SearchForm/SearchForm";
-import styles from "./page.module.css";
+import "./page.module.css";
 
 
 async function fetchCountries(name: String): Promise<CountryDTO[]> {
@@ -38,7 +38,7 @@ export default function Home() {
   }
 
   return (
-    <section>
+    <section className="countries-page">
       <SearchForm onSearch={searchCountryByName} />
       <CountryList countries={countries} />
     </section>
